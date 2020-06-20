@@ -9,7 +9,7 @@ public class HomeWork2 {
         int[] array = new int[] {1, 1, 0, 0, 1, 0, 1, 1, 0, 0};
 
         System.out.println("Массив на входе:");
-        System.out.println(Arrays.toString(array));
+        printArray(array);
 
         for (int i = 0; i < array.length; i++) {
             if (array[i] == 1){
@@ -19,7 +19,7 @@ public class HomeWork2 {
             }
         }
         System.out.println("Массив на выходе:");
-        System.out.println(Arrays.toString(array));
+        printArray(array);
         System.out.println("-----------------------------------");
 
 
@@ -34,7 +34,7 @@ public class HomeWork2 {
         }
 
         System.out.println("Массив на выходе:");
-        System.out.println(Arrays.toString(array2));
+        printArray(array2);
         System.out.println("-----------------------------------");
 
 
@@ -43,7 +43,7 @@ public class HomeWork2 {
         int[] array3 = new int[] {1, 5, 3, 2, 11, 4, 5, 2, 4, 8, 9, 1};
 
         System.out.println("Массив на входе:");
-        System.out.println(Arrays.toString(array3));
+        printArray(array3);
 
         for (int i = 0; i < array3.length; i++) {
             if (array3[i] < 6){
@@ -52,7 +52,7 @@ public class HomeWork2 {
         }
 
         System.out.println("Массив на выходе:");
-        System.out.println(Arrays.toString(array3));
+        printArray(array3);
         System.out.println("-----------------------------------");
 
 
@@ -89,17 +89,21 @@ public class HomeWork2 {
         int minValue = min_max_array[0];
         int maxValue = min_max_array[0];
 
-        System.out.println("Входящий массив " + Arrays.toString(min_max_array));
+        System.out.print("Входящий массив ");
+        printArray(min_max_array);
 
         for (int i = 1; i < min_max_array.length; i++) {
-            if (minValue > min_max_array[i]){
+            if (minValue > min_max_array[i]) {
                 minValue = min_max_array[i];
             }
+        }
 
+        for (int i = 0; i < min_max_array.length; i++) {
             if (maxValue < min_max_array[i]){
                 maxValue = min_max_array[i];
             }
         }
+
 
         System.out.println("Минимальное значение = " + minValue);
         System.out.println("Максимальное значение = " + maxValue);
@@ -113,7 +117,8 @@ public class HomeWork2 {
         System.out.println("Задание №6");
         int[] balance_array = new int[] {2, 2, 2, 1, 2, 2, 10, 1};
 
-        System.out.println("Входящий массив: " + Arrays.toString(balance_array));
+        System.out.println("Входящий массив: ");
+        printArray(balance_array);
 
         System.out.println(checkBalance(balance_array));
         System.out.println("-----------------------------------");
@@ -130,7 +135,7 @@ public class HomeWork2 {
         int[] slide_array = new int[] {-5, -4, -3, -2, -1, 1, 2, 3, 4, 5};
         int tempValue = 0;
 
-        if (Math.abs(n) < slide_array.length){
+        if (Math.abs(n) < slide_array.length){ // Для того чтобы не крутить лишний раз элементы массива, отсекаем "целые" круги
             if (n >= 0){
                 System.out.println("Сдвиг вправо на " + n);
                 for (int i = 0; i < n; i++) {
@@ -178,9 +183,7 @@ public class HomeWork2 {
                 }
             }
         }
-        System.out.println(Arrays.toString(slide_array));
-
-
+        printArray(slide_array);
     }
 
     public static boolean checkBalance(int[] balance_array){
@@ -198,5 +201,19 @@ public class HomeWork2 {
             }
         }
             return false;
+    }
+
+    public static void printArray (int[] array){
+        for (int i = 0; i < array.length; i++) {
+            if (i == 0){
+                System.out.print("[");
+            }
+            System.out.print(array[i]);
+            if (i == array.length - 1){
+                System.out.println("]");
+            } else {
+                System.out.print(", ");
+            }
+        }
     }
 }
