@@ -15,37 +15,37 @@ public class Main {
     private static int amountofFood = 75; // Сколько еды положим в тарелку
 
     public static void main(String[] args) {
-        Cat cat = new Cat("Барсик", 10);
+        Java1_7_Cat java17Cat = new Java1_7_Cat("Барсик", 10);
         Plate plate = new Plate(amountofFood);
 
-        Cat[] cats = new Cat[catsCount];
+        Java1_7_Cat[] java17Cats = new Java1_7_Cat[catsCount];
 
 
 //        catIni(cats); // Автоматическое кормление случайных котов (закомментировать в случае ручного кормления)
 
 
         // Ручное кормление котов (закомментировать в случае автоматического кормления)
-        cats[0] = new Cat("Ешка", 10);
-        cats[1] = new Cat("Барсик", 10);
-        cats[2] = new Cat("Кузя", 10);
-        cats[3] = new Cat("Том", 10);
-        cats[4] = new Cat("Яшка", 10);
-        cats[5] = new Cat("Саймон", 10);
-        cats[6] = new Cat("Томас", 10);
-        cats[7] = new Cat("Макс", 10);
-        cats[8] = new Cat("Кот", 10);
-        cats[9] = new Cat("Ежкинкот", 2);
+        java17Cats[0] = new Java1_7_Cat("Ешка", 10);
+        java17Cats[1] = new Java1_7_Cat("Барсик", 10);
+        java17Cats[2] = new Java1_7_Cat("Кузя", 10);
+        java17Cats[3] = new Java1_7_Cat("Том", 10);
+        java17Cats[4] = new Java1_7_Cat("Яшка", 10);
+        java17Cats[5] = new Java1_7_Cat("Саймон", 10);
+        java17Cats[6] = new Java1_7_Cat("Томас", 10);
+        java17Cats[7] = new Java1_7_Cat("Макс", 10);
+        java17Cats[8] = new Java1_7_Cat("Кот", 10);
+        java17Cats[9] = new Java1_7_Cat("Ежкинкот", 2);
         // Конец ручного кормления
 
 
-        eatTime(cats, plate);
-        catsStatus(cats);
+        eatTime(java17Cats, plate);
+        catsStatus(java17Cats);
     }
 
     // Создаем котов
-    public static void catIni(Cat[] cats){
+    public static void catIni(Java1_7_Cat[] java17Cats){
         for (int i = 0; i < catsCount; i++) {
-            cats[i] = new Cat(catName(), catAppetite());
+            java17Cats[i] = new Java1_7_Cat(catName(), catAppetite());
         }
     }
 
@@ -63,15 +63,15 @@ public class Main {
     }
 
     // Кормим котов
-    public static void eatTime(Cat[] cats, Plate plate){
-        for (int i = 0; i < cats.length; i++) {
-            cats[i].eat(plate);
+    public static void eatTime(Java1_7_Cat[] java17Cats, Plate plate){
+        for (int i = 0; i < java17Cats.length; i++) {
+            java17Cats[i].eat(plate);
         }
     }
 
-    public static void catsStatus(Cat[] cats){
-        for (int i = 0; i < cats.length; i++) {
-            System.out.println(cats[i].toString());
+    public static void catsStatus(Java1_7_Cat[] java17Cats){
+        for (int i = 0; i < java17Cats.length; i++) {
+            System.out.println(java17Cats[i].toString());
         }
     }
 }
