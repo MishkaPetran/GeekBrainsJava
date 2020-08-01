@@ -31,13 +31,9 @@ public class Form extends JFrame {
                             .append("\n")
                             .append(inputField.getText());
                     charTextArea.setText(sb.toString());
-                    inputField.setText("");
-                    sb.setLength(0);
-                } else {
-                    inputField.setText("");
-                    sb.setLength(0);
-                    return;
                 }
+                inputField.setText("");
+                sb.setLength(0);
             }
         });
 

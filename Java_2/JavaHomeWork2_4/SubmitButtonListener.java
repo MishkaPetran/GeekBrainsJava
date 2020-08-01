@@ -14,18 +14,13 @@ public class SubmitButtonListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
-        JButton jButton = (JButton) e.getSource();
         if (!String.valueOf(textField.getText()).trim().isEmpty()){
             sb.append(textArea.getText())
                     .append("\n")
                     .append(textField.getText());
             textArea.setText(sb.toString());
-            textField.setText("");
-            sb.setLength(0);
-        } else {
-            textField.setText("");
-            sb.setLength(0);
-            return;
         }
+        textField.setText("");
+        sb.setLength(0);
     }
 }
