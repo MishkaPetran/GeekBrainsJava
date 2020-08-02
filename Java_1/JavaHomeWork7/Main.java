@@ -15,26 +15,26 @@ public class Main {
     private static int amountofFood = 75; // Сколько еды положим в тарелку
 
     public static void main(String[] args) {
-        Cat cat = new Cat("Барсик", 10);
+        Java1_7_Cat Cat = new Java1_7_Cat("Барсик", 10);
         Plate plate = new Plate(amountofFood);
 
-        Cat[] cats = new Cat[catsCount];
+        Java1_7_Cat[] cats = new Java1_7_Cat[catsCount];
 
 
 //        catIni(cats); // Автоматическое кормление случайных котов (закомментировать в случае ручного кормления)
 
 
         // Ручное кормление котов (закомментировать в случае автоматического кормления)
-        cats[0] = new Cat("Ешка", 10);
-        cats[1] = new Cat("Барсик", 10);
-        cats[2] = new Cat("Кузя", 10);
-        cats[3] = new Cat("Том", 10);
-        cats[4] = new Cat("Яшка", 10);
-        cats[5] = new Cat("Саймон", 10);
-        cats[6] = new Cat("Томас", 10);
-        cats[7] = new Cat("Макс", 10);
-        cats[8] = new Cat("Кот", 10);
-        cats[9] = new Cat("Ежкинкот", 2);
+        cats[0] = new Java1_7_Cat("Ешка", 10);
+        cats[1] = new Java1_7_Cat("Барсик", 10);
+        cats[2] = new Java1_7_Cat("Кузя", 10);
+        cats[3] = new Java1_7_Cat("Том", 10);
+        cats[4] = new Java1_7_Cat("Яшка", 10);
+        cats[5] = new Java1_7_Cat("Саймон", 10);
+        cats[6] = new Java1_7_Cat("Томас", 10);
+        cats[7] = new Java1_7_Cat("Макс", 10);
+        cats[8] = new Java1_7_Cat("Кот", 10);
+        cats[9] = new Java1_7_Cat("Ежкинкот", 2);
         // Конец ручного кормления
 
 
@@ -43,9 +43,9 @@ public class Main {
     }
 
     // Создаем котов
-    public static void catIni(Cat[] cats){
+    public static void catIni(Java1_7_Cat[] cats){
         for (int i = 0; i < catsCount; i++) {
-            cats[i] = new Cat(catName(), catAppetite());
+            cats[i] = new Java1_7_Cat(catName(), catAppetite());
         }
     }
 
@@ -63,13 +63,13 @@ public class Main {
     }
 
     // Кормим котов
-    public static void eatTime(Cat[] cats, Plate plate){
+    public static void eatTime(Java1_7_Cat[] cats, Plate plate){
         for (int i = 0; i < cats.length; i++) {
             cats[i].eat(plate);
         }
     }
 
-    public static void catsStatus(Cat[] cats){
+    public static void catsStatus(Java1_7_Cat[] cats){
         for (int i = 0; i < cats.length; i++) {
             System.out.println(cats[i].toString());
         }

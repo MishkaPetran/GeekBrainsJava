@@ -1,9 +1,9 @@
-public class Cat {
+public class Java1_7_Cat {
     private String name;
     private int appetite;
     private boolean full = false;
 
-    public Cat(String name, int appetite) {
+    public Java1_7_Cat(String name, int appetite) {
         this.name = name;
         this.appetite = appetite;
         this.full = false;
