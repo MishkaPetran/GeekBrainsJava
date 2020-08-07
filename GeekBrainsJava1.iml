@@ -3,17 +3,18 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/Java_1/HomeWork1" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Java_1/HomeWork3" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Java_1/HomeWork2" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Java_1/HomeWork4" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/Java_1/HomeWork5_OOP" isTestSource="false" />
-      <sourceFolder url="file://$MODULE_DIR$/HomeWork7" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java_1/JavaHomeWork1" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java_1/JavaHomeWork3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java_1/JavaHomeWork2" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java_1/JavaHomeWork4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java_1/JavaHomeWork5_OOP" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java_1/JavaHomeWork7" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_1/HomeWork8" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_2/JavaHomeWork2_1" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_2/JavaHomeWork2_2" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_2/JavaHomeWork2_3" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/Java_2/JavaHomeWork2_4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Java_2/JavaHomeWork2_5" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
